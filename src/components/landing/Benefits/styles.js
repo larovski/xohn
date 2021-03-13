@@ -6,6 +6,11 @@ export const Wrapper = styled.div`
   background-size: contain;
   background-position: left top;
   background-repeat: no-repeat; */
+  padding-top: 5rem;
+
+  @media (max-width: 480px) {
+    padding-top: 0;
+  }
 `;
 
 export const BenefitsWrapper = styled.div`

@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 import { Formik, Form, FastField, ErrorMessage } from "formik";
-import Recaptcha from "react-google-recaptcha";
+// import Recaptcha from "react-google-recaptcha";
 import * as Yup from "yup";
 import { Button, Input } from "components/common";
 import { Error, Center, InputField } from "./styles";
@@ -108,17 +108,17 @@ export default () => (
             </InputField>
             <InputField>
               <div style={{ display: "flex", width: "100%" }}>
-                <Input
-                  id="agreement"
-                  aria-label="agreement"
-                  component="input"
-                  type="checkbox"
-                  name="checked"
-                  required
-                  value="agree"
-                  style={{ flex: "1", marginRight: "5px" }}
-                />
                 <label>
+                  <Input
+                    id="agreement"
+                    aria-label="agreement"
+                    component="input"
+                    type="checkbox"
+                    name="checked"
+                    required
+                    value="agree"
+                    style={{ flex: "1", marginRight: "5px" }}
+                  />
                   Durch Ankreuzen dieses Kästchens bestätigen Sie, dass Sie
                   unsere Nutzungsbedingungen bezüglich der Speicherung der über
                   dieses Formular übermittelten Daten gelesen haebn und damit

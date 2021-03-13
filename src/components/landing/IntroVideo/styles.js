@@ -7,47 +7,72 @@ export const Wrapper = styled.div`
   background-size: contain;
   background-position: right top;
   background-repeat: no-repeat; */
+  background-color: #efebe7;
 `;
 
 export const IntroWrapper = styled.div`
-  position: relative;
+  position: fixed;
+  top: 0;
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   max-width: 1440px;
-  min-height: 800px;
+  min-height: 650px;
   width: 100%;
 
   @media (max-width: 960px) {
-  position: relative;
-
+    position: relative;
+    min-height: 550px;
     flex-direction: column;
   }
 `;
 
 export const Percentage = styled.div`
-  font-size: 140px;
-  font-weight: 600;
+  font-size: 100px;
+  margin-bottom: auto;
+  color: #212121;
+  font-weight: 800;
+  @media (max-width: 480px) {
+    font-size: 70px;
+  }
 `;
 
 export const Text = styled.p`
   line-height: 2em;
+  color: #212121;
+
+  @media (max-width: 480px) {
+    font-size: 13px;
+    width: 70%;
+  }
 `;
 
 export const Details = styled.div`
-  flex: 1;
+  position: absolute;
+  top: 30%;
+  width: 50%;
   z-index: 1;
-  padding-left: 4rem;
+  padding-left: 10rem;
+  min-height: 300px;
+
+  @media (max-width: 480px) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 100px 0 0;
+    margin-left: 20px;
+    min-height: 100px;
+  }
 
   @media (max-width: 960px) {
-    width: 100%;
+    width: 70%;
     margin-bottom: 2rem;
   }
 
   h1 {
     margin-bottom: 2rem;
-    font-size: 36pt;
+    font-size: 30pt;
     color: ${({ theme }) => (theme === "light" ? "#212121" : "#EFEBE7")};
 
     @media (max-width: 960px) {

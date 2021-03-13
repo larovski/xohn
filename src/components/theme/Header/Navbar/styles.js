@@ -5,7 +5,6 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 `;
 
 export const Logo = styled.img`
@@ -20,6 +19,6 @@ export const Brand = styled.a`
 
   @media (max-width: 960px) {
     mix-blend-mode: ${({ theme }) =>
-      theme === "light" ? "unset" : "difference"};
+      theme === "light" ? "unset" : "unset"};
   }
 `;

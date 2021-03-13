@@ -1,4 +1,4 @@
-export * from './Intro';
+export * from './IntroVideo';
 export * from './Benefits';
 export * from './Skills';
 export * from './Contact';

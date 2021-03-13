@@ -1,8 +1,10 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 export const Global = createGlobalStyle`
+/* @import "./fonts.css"; */
+
   html {
-    font-family: 'Chivo', Helvetica, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 
@@ -263,7 +265,7 @@ export const Global = createGlobalStyle`
       color: inherit;
       font-weight: bold;
       text-rendering: optimizeLegibility;
-      font-size: 1rem;
+      font-size: 1SFProDisplay-Semibolrem;
       line-height: 1.1;
     }
     h5 {
@@ -570,8 +572,7 @@ export const Global = createGlobalStyle`
     code {
       background-color: hsla(0, 0%, 0%, 0.04);
       border-radius: 3px;
-      font-family: 'SFMono-Regular', Consolas, 'Roboto Mono', 'Droid Sans Mono',
-        'Liberation Mono', Menlo, Courier, monospace;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
       padding: 0;
       padding-top: 0.2em;
       padding-bottom: 0.2em;
@@ -601,9 +602,11 @@ export const Global = createGlobalStyle`
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Roboto', Helvetica, sans-serif;
-      color: ${({ theme }) => (theme === 'light' ? 'hsla(0, 0%, 0%, 0.8)' : '#EFEBE7')};
-      background-color: ${({ theme }) => (theme === 'light' ? '#EFEBE7' : '#212121')};
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      color: ${({ theme }) =>
+        theme === "light" ? "hsla(0, 0%, 0%, 0.8)" : "#EFEBE7"};
+      background-color: ${({ theme }) =>
+        theme === "light" ? "#EFEBE7" : "#212121"};
       transition: .3s all;
       font-weight: normal;
       word-wrap: break-word;
@@ -612,6 +615,10 @@ export const Global = createGlobalStyle`
       -ms-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
       -webkit-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
       font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+    }
+
+    .sc-bwzfXH .bsKBXE .intro{
+      left:0;
     }
 
     a {

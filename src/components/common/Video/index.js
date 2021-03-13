@@ -15,6 +15,7 @@ export const Video = props => {
       <VideoComponent
         videoSrcURL={props.videoSrcURL}
         videoTitle={props.videoTitle}
+        ref={props.ref}
       />
     </VideoComponentWraper>
   );
@@ -24,21 +25,16 @@ const VideoWrapper = styled.div`
   video {
     height: 100%;
     width: 100%;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    object-fit: contain;
-    position: absolute;
+    object-fit: cover;
   }
 `;
 
-const VideoComponent = ({ videoSrcURL, onEnd }) => {
+const VideoComponent = ({ ref, videoSrcURL, onEnd }) => {
   return (
     <VideoWrapper>
-      <video muted autoPlay loop>
-        <source src={videoSrcURL} type="video/mp4" />
-      </video>
+      {/* <video id="video">
+        <source ref={ref} src={videoSrcURL} type="video/mp4" />
+      </video> */}
     </VideoWrapper>
   );
 };

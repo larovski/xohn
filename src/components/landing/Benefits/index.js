@@ -1,12 +1,11 @@
 import React, { useContext } from "react";
-import AnchorLink from "react-anchor-link-smooth-scroll";
+// import AnchorLink from "react-anchor-link-smooth-scroll";
 import { ThemeContext } from "providers/ThemeProvider";
-import { Container, Button } from "components/common";
+import { Container } from "components/common";
 // import dev from "assets/illustrations/skills.svg";
 import {
   Wrapper,
   BenefitsWrapper,
-  Details,
   Grid,
   Tile,
   TileBox,
@@ -50,6 +49,7 @@ export const Benefits = () => {
   return (
     <Wrapper id="benefits">
       <BenefitsWrapper as={Container}>
+        <h2>Vorteile</h2>
         <Grid>
           {benefits.map((content, index) => (
             <TileBox key={index}>

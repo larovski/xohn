@@ -1,7 +1,11 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  padding: 2rem 0;
+  padding: 5rem 0 2rem;
+
+  @media (max-width: 480px) {
+    padding: 0 0 2rem;
+  }
 `;
 
 export const Grid = styled.div`
@@ -27,11 +31,11 @@ export const Item = styled.div`
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.11);
 
   h4 {
-    color: ${({ theme }) => (theme === 'light' ? '#212121' : '#EFEBE7')};
+    color: ${({ theme }) => (theme === "light" ? "#212121" : "#EFEBE7")};
   }
 
   p {
-    color: ${({ theme }) => (theme === 'light' ? '#707070' : '#c7c7c7')};
+    color: ${({ theme }) => (theme === "light" ? "#707070" : "#c7c7c7")};
   }
 `;
 
@@ -55,11 +59,11 @@ export const Stats = styled.div`
     }
 
     svg path {
-      fill: ${({ theme }) => (theme === 'light' ? '#000' : '#EFEBE7')};
+      fill: ${({ theme }) => (theme === "light" ? "#000" : "#EFEBE7")};
     }
 
     span {
-      color: ${({ theme }) => (theme === 'light' ? '#000' : '#EFEBE7')};
+      color: ${({ theme }) => (theme === "light" ? "#000" : "#EFEBE7")};
       margin-left: 0.5rem;
     }
   }

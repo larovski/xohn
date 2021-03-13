@@ -21,7 +21,7 @@ export const Wrapper = styled.div`
 			}
 
 			a {
-					margin-right: 1rem;
+					margin-right: 3rem;
 
 					&:last-child {
 							margin-right: unset;
@@ -45,5 +45,6 @@ export const Wrapper = styled.div`
 
 export const Item = styled.span`
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 13px;
 `;
