@@ -1,14 +1,20 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  background: transparent;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   background-color: #efebe7;
   z-index: 3;
+  margin: 0 auto;
   width: 100%;
+`;
+
+export const InnerWrapper = styled.div`
+  background: transparent;
+  margin: 0 auto;
+  width: 90%;
 `;
 
 export const Overlay = styled.div`

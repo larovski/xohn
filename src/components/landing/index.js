@@ -1,5 +1,6 @@
-export * from './IntroVideo';
+export * from './Intro';
 export * from './Benefits';
 export * from './Skills';
 export * from './Contact';
 export * from './Examples';
+export * from './ExamplesThree';

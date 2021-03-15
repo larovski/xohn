@@ -10,6 +10,7 @@ export const Wrapper = styled.div`
 
 export const SkillsWrapper = styled.div`
   padding: 4rem 0;
+  margin-top: -15rem;
 
   h1 {
     margin-bottom: 2rem;
@@ -18,6 +19,15 @@ export const SkillsWrapper = styled.div`
     text-transform: uppercase;
     text-align: left;
     color: ${({ theme }) => (theme === "dark" ? "#EFEBE7" : "#212121")};
+
+    @media (max-width: 680px) {
+      width: 70%;
+    }
+
+    @media (max-width: 480px) {
+      width: 100%;
+      font-size: 15pt;
+    }
   }
 `;
 
@@ -77,6 +87,16 @@ export const TileBox = styled.div`
   h6 {
     margin-bottom: 0;
     line-height: 1.5;
+  }
+
+  @media (max-width: 680px) {
+    flex-direction: column-reverse;
+    align-items: ${props => (props.index % 2 ? "flex-end" : "flex-start")};
+    text-align: ${props => (props.index % 2 ? "left" : "right")};
+  }
+
+  img {
+    float: left;
   }
 `;
 

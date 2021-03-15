@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
   padding-top: 5rem;
 
   @media (max-width: 480px) {
-    padding-top: 0;
+    padding-top: 20px;
   }
 `;
 
@@ -56,6 +56,7 @@ export const Tile = styled.div`
 
   h1 {
     font-size: 50pt;
+    font-weight: 900;
     color: ${({ theme }) => (theme === "light" ? "#212121" : "#fff")};
     margin-bottom: 0;
     min-width: 50px;
@@ -65,9 +66,9 @@ export const Tile = styled.div`
   p {
     font-size: 10px;
     margin-bottom: 0;
-    font-weight: normal;
+    font-weight: 600;
     line-height: 1.5;
-    color: ${({ theme }) => (theme === "dark" ? "#c7c7c7" : "#707070")};
+    color: ${({ theme }) => (theme === "dark" ? "#c7c7c7" : "#212121")};
 
     @media (max-width: 960px) {
       mix-blend-mode: ${({ theme }) =>
@@ -80,8 +81,10 @@ export const Tile = styled.div`
     flex-direction: column;
 
     h6 {
+      font-size: 12px;
       margin-bottom: 0;
       line-height: 1.5;
+      font-weight: 800;
     }
   }
 `;

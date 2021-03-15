@@ -1,10 +1,10 @@
 module.exports = {
   defaultTitle: "xohn",
-  logo: "https://portfolio.smakosh.com/favicon/favicon-512.png",
+  logo: "",
   author: "Lars Moser",
   url: "https://xohn.de",
   legalName: "Lars Moser",
-  defaultDescription: "I’m John and I’m a Backend & Devops engineer!",
+  defaultDescription: "This is our website",
   socialLinks: {
     twitter: "",
     github: "",

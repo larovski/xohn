@@ -1,7 +1,6 @@
 import React from "react";
 import { Container } from "components/common";
 import { Wrapper, Flex, Details } from "./styles";
-// import social from "./social.json";
 
 export const Footer = () => (
   <Wrapper>
@@ -15,19 +14,6 @@ export const Footer = () => (
           <p>77652 Offenburg</p>
         </span>
       </Details>
-      {/* <Links>
-        {social.map(({ id, name, link, icon }) => (
-          <a
-            key={id}
-            href={link}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={`follow me on ${name}`}
-          >
-            <img width="24" src={icon} alt={name} />
-          </a>
-        ))}
-      </Links> */}
       <Details right>
         <h2>Rechtliches</h2>
         <span>

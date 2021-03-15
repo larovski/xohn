@@ -1,32 +1,27 @@
-import footerIllustration from "assets/illustrations/footer.svg";
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
   padding: 28rem 0 4rem 0;
   margin: auto;
   max-width: 1280px;
-  /* background-image: url(${footerIllustration});
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat; */
 
   @media (max-width: 1960px) {
     padding: 2rem 0 1.5rem;
+  }
+
+  @media (max-width: 680px) {
+    padding: 2rem 0 0;
   }
 `;
 
 export const Flex = styled.div`
   display: flex;
-  align-items: flex-flex-start;
+  align-items: flex-start;
   justify-content: space-between;
   border-top: 1px solid #727272;
   padding: 1.5rem 1rem 0;
 
-  @media (max-width: 680px) {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-  }
+  
 `;
 
 export const Links = styled.div`
@@ -69,5 +64,16 @@ export const Details = styled.div`
 
   @media (max-width: 680px) {
     margin-bottom: 2rem;
+
+    h2 {
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 0.75rem;
+      margin-bottom: 0;
+      line-height: 1.4;
+    }
   }
 `;

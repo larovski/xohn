@@ -15,16 +15,16 @@ export const Details = styled.div`
   flex: 1;
 
   @media (max-width: 960px) {
-    padding-right: unset;
     width: 100%;
     order: 1;
   }
 
   h2 {
     margin-bottom: 1rem;
-    font-size: 20pt;
+    font-size: 18pt;
     text-transform: uppercase;
     color: #212121;
+    font-weight: 800;
   }
 
   p {

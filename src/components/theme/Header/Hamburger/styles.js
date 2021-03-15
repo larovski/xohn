@@ -10,6 +10,7 @@ export const Wrapper = styled.div`
   position: absolute;
 
   @media (max-width: 960px) {
+  right: 1.5rem;
     display: block;
   }
 
